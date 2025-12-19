@@ -293,10 +293,10 @@ window.addEventListener('load', async () => {
   const chartTimelineEl = document.getElementById("timeline-select");
     const dataDisplayMessage = document.getElementById("dataDisplayMessage");
 
-  const searchUrl = "http://localhost:3000/api/search?q=";
-  const profileUrl = "http://localhost:3000/api/profile?symbol=";
-  const quoteUrl = "http://localhost:3000/api/quote?symbol=";
-  const candlesUrl = "http://localhost:3000/api/candles?symbol=";
+  const searchUrl = "https://nasdaq-stock-market.onrender.com/api/search?q=";
+  const profileUrl = "https://nasdaq-stock-market.onrender.com/api/profile?symbol=";
+  const quoteUrl = "https://nasdaq-stock-market.onrender.com/api/quote?symbol=";
+  const candlesUrl = "https://nasdaq-stock-market.onrender.com/api/candles?symbol=";
 
   let selectedSymbol = null;
   let searchDebounce = null;

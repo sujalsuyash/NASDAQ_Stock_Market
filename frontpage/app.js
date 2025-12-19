@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
  });
 }); 
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://nasdaq-stock-market.onrender.com';
 
 export async function fetchWishlist() {
  const { data: { session } } = await supabase.auth.getSession();

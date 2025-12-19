@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
- const apiURL = 'http://localhost:3001/api/market';
+ const apiURL = 'https://to-run-widget-panel-js.onrender.com/api/market';
 
  function formatCurrency(value) {
  return `$${Number(value).toLocaleString()}`;
