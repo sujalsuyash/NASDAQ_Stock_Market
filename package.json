@@ -5,8 +5,10 @@
   "main": "script.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+  "start": "node server.js",
+  "widget": "node to_run_widget_panel.js",
+  "dev": "node server.js & node to_run_widget_panel.js"
+}
   },
   "keywords": [],
   "author": "",
