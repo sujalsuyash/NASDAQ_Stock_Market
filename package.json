@@ -1,14 +1,13 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Stock Market Analysis Platform",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-  "start": "node server.js",
-  "widget": "node to_run_widget_panel.js",
-  "dev": "node server.js & node to_run_widget_panel.js"
-}
+    "start": "node server.js",
+    "widget": "node to_run_widget_panel.js",
+    "dev": "node server.js & node to_run_widget_panel.js"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +17,6 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "firebase": "^12.4.0",
     "node-fetch": "^3.3.2"
   }
 }
