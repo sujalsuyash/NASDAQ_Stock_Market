@@ -1,7 +1,7 @@
-📈 NASDAQ Stock Market & Analysis Dashboard
+**📈 NASDAQ Stock Market & Analysis Dashboard**
 A professional-grade, full-stack financial application providing real-time market data, technical analysis visualizations, and personalized user experiences. This project leverages a microservices-inspired architecture to deliver a high-performance dashboard with secure user authentication and automated data syncing.
 
-✨ Key Features
+_**✨ Key Features**_ -> 
 Real-Time Market Indices 📊
 
 A dedicated micro-service on Render specialized in fetching aggregated index data for NASDAQ, S&P 500, and Dow Jones via Yahoo Finance.
@@ -26,15 +26,16 @@ Snapshot Sharing 📸
 
 Built-in functionality to capture analysis snapshots and share them instantly using the Web Share API.
 
-🛠 Technical Stack
-Frontend
+
+_**🛠 Technical Stack**_ ->
+_Frontend_
 Framework: Vanilla JavaScript (ES6+ Modules), CSS3, and HTML5.
 
 Hosting: Vercel for high-performance static delivery.
 
 Visualizations: Chart.js for rendering complex technical market data.
 
-Backend
+_Backend_
 Environment: Node.js & Express.js.
 
 Architecture: Dual-server setup hosted on Render (Main API and Index Widget Service).
@@ -44,8 +45,8 @@ Provider: Supabase (PostgreSQL).
 
 Features: Managed Auth, PostgreSQL Triggers, and Row Level Security (RLS).
 
-🌐 API Ecosystem
-1. Internal API Service (Render)
+_**🌐 API Ecosystem**_ ->
+_1. Internal API Service (Render)_
 GET /api/search?q={query}: Returns a list of matching ticker symbols and descriptions.
 
 GET /api/profile?symbol={ticker}: Fetches company metadata, sector info, and exchange details.
@@ -56,7 +57,7 @@ GET /api/candles?symbol={ticker}: Supplies historical data points for technical 
 
 CRUD /api/wishlist: Secure endpoint for managing user-saved stocks.
 
-2. Widget Micro-service (Render)
+_2. Widget Micro-service (Render)_
 GET /api/market: Aggregates live prices and changes for major global indices.
 
 🗄 Database Schema & Automation
@@ -70,14 +71,14 @@ Serverless Sync: The trigger executes the handle_new_user() function, instantly 
 
 Security Policies: Row Level Security (RLS) ensures authenticated users only manage their own data.
 
-⚙️ Local Setup Instructions
-1. Install Dependencies
+_**⚙️ Local Setup Instructions**_ ->
+_1. Install Dependencies_
 Navigate to the project directory:
 
 Bash
 
 npm install
-2. Configure Environment
+_2. Configure Environment_
 Create a .env file in the root directory:
 
 Code snippet
@@ -85,7 +86,7 @@ Code snippet
 FINNHUB_KEY=your_finnhub_key_here
 SUPABASE_URL=your_supabase_url_here
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
-3. Launch Services
+_3. Launch Services_
 Start the main API server and the widget service:
 
 Bash
@@ -95,7 +96,7 @@ node to_run_widget_panel.js
 4. Run Frontend
 Open frontpage/frontpage.html using a local server (e.g., VS Code Live Server extension).
 
-🚀 Deployment Details
+_**🚀 Deployment Details**_ ->
 Vercel (Frontend): Configured via vercel.json to route the root domain directly to the frontpage folder.
 
 Render (Backend): Automated deployment cycles triggered upon every git push to the main branch.
