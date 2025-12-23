@@ -25,6 +25,10 @@ Smart Search & Filtering 🔍
 Intelligent search functionality providing auto-suggestions while filtering out low-quality listings like OTC or Pink Sheet stocks.
 
 Snapshot Sharing 📸
+<img width="1500" height="1368" alt="front-eight-sigma vercel app_frontpage_frontpage html" src="https://github.com/user-attachments/assets/d053f850-de76-48c1-a1ad-0b5df522182b" />
+<img width="1500" height="1155" alt="front-eight-sigma vercel app_dashboard_dashboard html" src="https://github.com/user-attachments/assets/e9193f1e-d0c4-4873-8153-e8c5cd95f515" />
+
+
 
 Built-in functionality to capture analysis snapshots and share them instantly using the Web Share API.
 
