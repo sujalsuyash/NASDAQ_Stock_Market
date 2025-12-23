@@ -1,7 +1,9 @@
 **📈 NASDAQ Stock Market & Analysis Dashboard**
+
 A professional-grade, full-stack financial application providing real-time market data, technical analysis visualizations, and personalized user experiences. This project leverages a microservices-inspired architecture to deliver a high-performance dashboard with secure user authentication and automated data syncing.
 
 _**✨ Key Features**_ -> 
+
 Real-Time Market Indices 📊
 
 A dedicated micro-service on Render specialized in fetching aggregated index data for NASDAQ, S&P 500, and Dow Jones via Yahoo Finance.
@@ -28,6 +30,7 @@ Built-in functionality to capture analysis snapshots and share them instantly us
 
 
 _**🛠 Technical Stack**_ ->
+
 _Frontend_
 Framework: Vanilla JavaScript (ES6+ Modules), CSS3, and HTML5.
 
@@ -46,6 +49,7 @@ Provider: Supabase (PostgreSQL).
 Features: Managed Auth, PostgreSQL Triggers, and Row Level Security (RLS).
 
 _**🌐 API Ecosystem**_ ->
+
 _1. Internal API Service (Render)_
 GET /api/search?q={query}: Returns a list of matching ticker symbols and descriptions.
 
@@ -72,6 +76,7 @@ Serverless Sync: The trigger executes the handle_new_user() function, instantly 
 Security Policies: Row Level Security (RLS) ensures authenticated users only manage their own data.
 
 _**⚙️ Local Setup Instructions**_ ->
+
 _1. Install Dependencies_
 Navigate to the project directory:
 
@@ -97,6 +102,7 @@ node to_run_widget_panel.js
 Open frontpage/frontpage.html using a local server (e.g., VS Code Live Server extension).
 
 _**🚀 Deployment Details**_ ->
+
 Vercel (Frontend): Configured via vercel.json to route the root domain directly to the frontpage folder.
 
 Render (Backend): Automated deployment cycles triggered upon every git push to the main branch.
