@@ -1,8 +1,7 @@
-**📈 NASDAQ Stock Market & Analysis Dashboard**
+📈 NASDAQ Stock Market & Analysis Dashboard
 A professional-grade, full-stack financial application providing real-time market data, technical analysis visualizations, and personalized user experiences. This project leverages a microservices-inspired architecture to deliver a high-performance dashboard with secure user authentication and automated data syncing.
 
-
-_**1. Key Features**_ -> 
+1. Key Features
 Real-Time Market Indices: A dedicated micro-service on Render specialized in fetching aggregated index data for NASDAQ, S&P 500, and Dow Jones via Yahoo Finance.
 
 Advanced Technical Analysis: Interactive price charts supporting various formats (Line, Area, Bar) and timelines (Weekly/Monthly) powered by Chart.js.
@@ -15,9 +14,7 @@ Smart Search & Filtering: Intelligent search functionality that provides auto-su
 
 Snapshot Sharing: Built-in functionality to capture analysis snapshots and share them instantly using the Web Share API.
 
-
-_**2. Technical Stack**_ -> 
-
+2. Technical Stack
 Frontend: Vanilla JavaScript (ES6+ Modules), CSS3, and HTML5 hosted on Vercel.
 
 Backends: Dual Node.js/Express servers hosted on Render (Main API and Index Widget Service).
@@ -28,10 +25,8 @@ Visualizations: Chart.js for rendering technical market data.
 
 DevOps: Absolute path routing and rewrites configured via vercel.json for a seamless single-link experience.
 
-_**3. API Ecosystem**_ -> 
-
+3. API Ecosystem
 Internal API Service (Render)
-
 /api/search?q={query}: Returns a list of matching ticker symbols and descriptions.
 
 /api/profile?symbol={ticker}: Fetches company metadata, sector information, and exchange details.
@@ -43,12 +38,9 @@ Internal API Service (Render)
 /api/wishlist: Secure endpoint for CRUD operations on user-saved stocks.
 
 Widget Micro-service (Render)
-
 /api/market: Aggregates live prices and changes for major global indices.
 
-
-_**4. Database Schema & Automation**_ -> 
-
+4. Database Schema & Automation
 The project uses advanced PostgreSQL automation to ensure a smooth user experience within Supabase:
 
 User Profiles: A custom profiles table stores user-specific data including id, username, and email.
@@ -59,8 +51,8 @@ Serverless Sync: The trigger executes the handle_new_user() function, which inst
 
 Security Policies: Row Level Security (RLS) is configured to allow authenticated users to manage only their own wishlist data.
 
+5. Local Setup Instructions
 
-_**5. Local Setup Instructions**_ -> 
 Install Dependencies: Navigate to the project directory and run npm install.
 
 Configure Environment: Create a .env file with your FINNHUB_KEY, SUPABASE_URL, and SUPABASE_SERVICE_ROLE_KEY.
@@ -69,8 +61,9 @@ Launch Backends: Start the main server with node dashboard/server.js and the wid
 
 Run Frontend: Open frontpage/frontpage.html using a local server (e.g., Live Server extension).
 
-
-_**6. Deployment Details**_ -> 
+6. Deployment Details
 Vercel (Frontend): Uses a vercel.json rewrite to route the root domain to the frontpage folder.
+
 Render (Backend): Implements automated deployment cycles upon every GitHub push to the main branch.
+
 CORS Security: Both backend services are optimized to accept secure requests from the Vercel production domain.
