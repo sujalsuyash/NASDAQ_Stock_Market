@@ -35,7 +35,6 @@ Serverless Sync: The trigger executes the handle_new_user() function, which inst
 Security Policies: Row Level Security (RLS) is configured to allow authenticated users to manage only their own wishlist data.
 
 _**5. Local Setup Instructions**_ -> 
-Clone the Repository: git clone https://github.com/sujalsuyash/NASDAQ_Stock_Market.git
 Install Dependencies: Navigate to the project directory and run npm install.
 Configure Environment: Create a .env file with your FINNHUB_KEY, SUPABASE_URL, and SUPABASE_SERVICE_ROLE_KEY.
 Launch Backends: Start the main server with node dashboard/server.js and the widget service with node to_run_widget_panel.js.
