@@ -125,8 +125,8 @@ class WishlistManager {
     console.log("Rendering wishlist, fetching details for:", currentWishlist.map(i => i.ticker_symbol));
     const detailPromises = currentWishlist.map(item => {
       const symbol = item.ticker_symbol;
-      const profileUrl = `http://localhost:3000/api/profile?symbol=${encodeURIComponent(symbol)}`;
-      const quoteUrl = `http://localhost:3000/api/quote?symbol=${encodeURIComponent(symbol)}`;
+      const profileUrl = `https://nasdaq-stock-market.onrender.com/api/profile?symbol=${encodeURIComponent(symbol)}`;
+      const quoteUrl = `https://nasdaq-stock-market.onrender.com/api/quote?symbol=${encodeURIComponent(symbol)}`; 
 
       return Promise.all([
         fetch(profileUrl)
@@ -486,7 +486,7 @@ window.addEventListener('load', async () => {
             document.getElementById("stockLow").innerText=typeof quote.l === 'number'?`$${quote.l.toFixed(2)}`:"-";
 
             if(profile.logo && companyLogoEl){
-                companyLogoEl.src = `http://localhost:3000/api/logo?url=${encodeURIComponent(profile.logo)}`;
+                companyLogoEl.src = `https://nasdaq-stock-market.onrender.com/api/logo?url=${encodeURIComponent(profile.logo)}`;
                 companyLogoEl.alt = `${profile.name} logo`;
                 companyLogoEl.classList.remove("hidden");
             } else if (companyLogoEl) {
